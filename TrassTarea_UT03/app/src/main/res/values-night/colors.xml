@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores para el tema oscuro -->
+    <color name="colorPrimaryDarkTheme">#121212</color>
+    <color name="colorSecondaryDarkTheme">#2F2F2F</color>
+    <color name="colorAccentDarkTheme">#FF4081</color>
+    <color name="colorBackgroundDarkTheme">#121212</color>
+    <color name="colorTextDarkTheme">#FFFFFF</color>
+    <color name="colorActionBarDarkTheme">#121212</color>
+</resources>

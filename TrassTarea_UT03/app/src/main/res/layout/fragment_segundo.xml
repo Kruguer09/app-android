@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#F2FFFFFF"
+    android:backgroundTintMode="src_atop"
+    tools:context=".fragmentos.FragmentoDos">
+
+    <ImageView
+        android:id="@+id/btn_documento"
+        android:layout_width="35dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/icon_pdf"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_documento"
+        app:layout_constraintEnd_toStartOf="@+id/tv_documento"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_documento" />
+
+    <ImageView
+        android:id="@+id/btn_imagen"
+        android:layout_width="37dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="16dp"
+        android:foregroundGravity="center"
+        android:src="@drawable/icon_image"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_imagen"
+        app:layout_constraintEnd_toStartOf="@+id/tv_imagen"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_imagen"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <ImageView
+        android:id="@+id/btn_audio"
+        android:layout_width="37dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/icon_audio"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_audio"
+        app:layout_constraintEnd_toStartOf="@+id/tv_audio"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_audio"
+        tools:srcCompat="@drawable/icon_audio" />
+
+    <ImageView
+        android:id="@+id/btn_video"
+        android:layout_width="37dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/icon_video"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_video"
+        app:layout_constraintEnd_toStartOf="@+id/tv_video"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_video" />
+
+    <TextView
+        android:id="@+id/tv_audio"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:autoText="true"
+        android:background="@drawable/marco_vista"
+        android:foregroundGravity="center_vertical"
+        android:gravity="center_vertical"
+        android:hint="@string/tarea_add_audio"
+        android:paddingLeft="12dp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_video"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_audio"
+        app:layout_constraintTop_toBottomOf="@+id/tv_imagen" />
+
+    <TextView
+        android:id="@+id/tv_imagen"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:autoText="true"
+        android:background="@drawable/marco_vista"
+        android:foregroundGravity="center_vertical"
+        android:gravity="center_vertical"
+        android:hint="@string/tarea_add_image"
+        android:paddingLeft="12dp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_audio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_imagen"
+        app:layout_constraintTop_toBottomOf="@+id/tv_documento" />
+
+    <TextView
+        android:id="@+id/tv_video"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:autoText="true"
+        android:background="@drawable/marco_vista"
+        android:foregroundGravity="center_vertical"
+        android:gravity="center_vertical"
+        android:hint="@string/tarea_add_video"
+        android:paddingLeft="12dp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/bt_volver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_video"
+        app:layout_constraintTop_toBottomOf="@+id/tv_audio" />
+
+    <TextView
+        android:id="@+id/tv_documento"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:autoText="true"
+        android:background="@drawable/marco_vista"
+        android:foregroundGravity="center_vertical"
+        android:gravity="center_vertical"
+        android:hint="@string/tarea_add_document"
+        android:paddingLeft="12dp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_imagen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_documento"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+    <TextView
+        android:id="@+id/tv_descripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="287dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/tv_descripcion"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.581" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.145">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/marco_vista"
+            android:ems="10"
+            android:fontFamily="@font/lexend_light"
+            android:gravity="start|top"
+            android:hint="@string/hint_et_descripcion"
+            android:inputType="textMultiLine"
+            android:lines="10"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/bt_volver"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:background="@drawable/marco_boton"
+        android:text="@string/bt_volver"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bt_guardar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="0.937" />
+
+    <Button
+        android:id="@+id/bt_guardar"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:background="@drawable/marco_boton"
+        android:text="@string/bt_guardar"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_volver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bt_volver" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

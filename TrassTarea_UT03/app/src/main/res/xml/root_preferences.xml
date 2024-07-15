@@ -1,0 +1,148 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    id="@+id/pref_screen"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/preference_visualizacion">
+
+        <SwitchPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="true"
+            android:title="@string/pref_visualizacion_tema"
+            app:key="key_pref_theme"
+            app:summaryOff="@string/tema_oscuro"
+            app:summaryOn="@string/tema_claro"
+            app:icon="@drawable/icon_theme_light"
+            app:useSimpleSummaryProvider="true" />
+        <ListPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:title="@string/pref_visualizacion_tamaño"
+            app:defaultValue="2"
+            app:entries="@array/fuente_leida"
+            app:entryValues="@array/fuente_mostrada"
+            app:key="key_pref_font"
+            app:icon="@drawable/icon_fontsize_light"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/preference_ordenacion">
+
+        <ListPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="2"
+            android:title="@string/pref_criterio"
+            app:entries="@array/pref_criterio_mostrado"
+            app:entryValues="@array/pref_criterio_leido"
+            app:key="key_pref_criterio"
+            app:icon="@drawable/icon_filter_light"
+            app:useSimpleSummaryProvider="true" />
+        <SwitchPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="true"
+            android:title="@string/pref_orden"
+            app:key="key_pref_orden"
+            app:icon="@drawable/icon_sort_light"
+            app:summaryOff="@string/pref_orden_off"
+            app:summaryOn="@string/pref_orden_on" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/preference_almacenamiento">
+
+        <CheckBoxPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="false"
+            app:icon="@drawable/icon_sdcard_light"
+            app:key="@string/sdcard"
+            android:title="@string/pref_almacenamiento_sd" />
+        <EditTextPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="0"
+            android:inputType="number"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_limpieza"
+            app:icon="@drawable/icon_limpieza_light"
+            app:key="key_pref_limpieza"
+            app:useSimpleSummaryProvider="true"/>
+        <SwitchPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="false"
+            android:title="@string/pref_basedatos"
+            app:key="key_pref_database"
+            app:icon="@drawable/icon_database_light"
+            app:summaryOff="@string/pref_basedatos_off"
+            app:summaryOn="@string/pref_basedatos_on" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/preference_basedatos"
+        app:dependency="key_pref_database">
+
+        <EditTextPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/title_bd_externa"
+            app:key="key_servidorexterno"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="IP"
+            android:defaultValue="10.0.2.2"
+            app:key="key_ip_servidor"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:defaultValue="1001"
+            android:title="@string/title_db_port"
+            app:key="key_ip_puerto"
+            app:useSimpleSummaryProvider="true"
+            app:dependency="key_pref_database"/>
+        <EditTextPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:defaultValue="Usuario"
+            android:title="@string/title_user"
+            app:key="key_usuario"
+            app:useSimpleSummaryProvider="true"
+            app:dependency="key_pref_database"/>
+        <EditTextPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:defaultValue=""
+            android:title="@string/title_password"
+            app:key="key_contraseña"
+            app:dependency="key_pref_database"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="key_reset_preferences"
+        android:layout="@layout/reset_preferences_button">
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <!-- Colores para el tema claro -->
+        <color name="colorPrimary">#1A6BAA</color>
+        <color name="colorPrimaryDark">#FFFFFF</color>
+        <color name="colorSecondary">#E2E9F1</color>
+        <color name="colorAccent">#1A6BAA</color>
+        <color name="colorActionBar">#FFFFFF</color>
+        <color name="tareaPasada">#FF0000</color>
+        <color name="colorBackground">#FFFFFF</color>
+        <color name="colorText">#1A6BAA</color>
+
+        <!-- Colores para el tema oscuro -->
+        <color name="colorPrimaryDarkTheme">#121212</color>
+        <color name="colorSecondaryDarkTheme">#2F2F2F</color>
+        <color name="colorAccentDarkTheme">#FF4081</color>
+        <color name="colorBackgroundDarkTheme">#121212</color>
+        <color name="colorTextDarkTheme">#FFFFFF</color>
+        <color name="colorActionBarDarkTheme">#121212</color>
+
+        <!-- Agrega otros colores según sea necesario -->
+
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="primario">#1A6BAA</color>
+    <color name="primario_oscuro">#0C304C</color>
+    <color name="secundario">#C1D3DC</color>
+    <color name="primario_variante">#6495C1</color>
+    <color name="claro">#DCE3EC</color>
+    <color name="tareaPredeterminada">#4D4D4D</color>
+    <color name="resaltado">#E5E5E5</color>
+    <color name="resaltado_oscuro">#BF360C</color>
+    <color name="oscuro">#1E1E1E</color>
+</resources>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".actividades.MainActivity">
+
+    <ImageView
+        android:id="@+id/main_iv_logo"
+        android:layout_width="405dp"
+        android:layout_height="141dp"
+        android:layout_marginBottom="4dp"
+        android:foregroundGravity="center_vertical|center_horizontal"
+        android:src="@drawable/trass_tarea_logo"
+        app:layout_constraintBottom_toTopOf="@+id/iv_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="413dp"
+        android:layout_height="297dp"
+        android:src="@drawable/trass_tarea_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.036" />
+
+    <ImageView
+        android:id="@+id/iv_background"
+        android:layout_width="314dp"
+        android:layout_height="309dp"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/imagen_inicio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/main_tv_eslogan"
+        android:layout_width="366dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="508dp"
+        android:clickable="false"
+        android:fontFamily="@font/homemade_apple"
+        android:gravity="center|center_vertical"
+        android:text="@string/main_tv_slogan"
+        android:textColor="#6495C1"
+        android:textSize="17sp"
+        app:flow_horizontalAlign="start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="104dp"
+        android:layout_height="84dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/bt_empezar"
+        app:layout_constraintEnd_toEndOf="@+id/bt_empezar"
+        app:layout_constraintStart_toStartOf="@+id/bt_empezar"
+        app:layout_constraintTop_toBottomOf="@+id/main_tv_eslogan"
+        app:layout_constraintVertical_bias="0.444"
+        app:srcCompat="@drawable/logo_pencil_orange"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/bt_empezar"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/marco_boton"
+        android:backgroundTint="#6495C1"
+        android:elevation="2dp"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center|center_vertical"
+        android:text="@string/bt_empezar"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:iconTint="#1A6BAA"
+        app:layout_constraintBottom_toTopOf="@+id/iv_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="#1A6BAA"
+        app:strokeWidth="?android:attr/scrollbarSize" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

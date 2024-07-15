@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="item_preferencias">Preferencias</string>
+    <string name="preference_visualizacion">Visualización</string>
+    <string name="preference_ordenacion">Ordenación</string>
+    <string name="preference_almacenamiento">Almacenamiento</string>
+    <string name="preference_basedatos">Base de datos externa</string>
+    <string name="pref_visualizacion_tema">Tema</string>
+    <string name="tema_oscuro">Oscuro</string>
+    <string name="pref_visualizacion_tamaño">Fuente</string>
+</resources>

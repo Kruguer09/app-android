@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.TrassTarea" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#868686</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDarkTheme</item>
+        <item name="colorOnPrimary">@color/oscuro</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/resaltado</item>
+        <item name="colorSecondaryVariant">@color/resaltado</item>
+        <item name="colorOnSecondary">@color/oscuro</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/oscuro</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

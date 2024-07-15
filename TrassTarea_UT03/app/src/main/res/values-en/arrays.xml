@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="progreso_texto">
+        <item>Not started</item>
+        <item>Started</item>
+        <item>Advanced</item>
+        <item>Almost finished</item>
+        <item>Finished</item>
+    </array>
+
+
+    <string-array name="fuente_leida">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+
+    <string-array name="fuente_mostrada">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="pref_criterio_mostrado">
+        <item>Alphabetic</item>
+        <item>Creation Date</item>
+        <item>Remaining days</item>
+        <item>Progress</item>
+    </string-array>
+
+    <string-array name="pref_criterio_leido">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+</resources>

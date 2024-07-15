@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Fondo del mosaico (puedes cambiar el color si lo deseas) -->
+    <item android:drawable="@android:color/black" />
+
+    <!-- Imagen que se repetirá en el fondo (ajusta la fuente según tus necesidades) -->
+    <item>
+        <bitmap
+            android:src="@drawable/trama_background_pencil_dark"
+            android:tileMode="repeat"
+            android:tint="#F2040404"
+            android:tintMode="src_atop"
+            android:dither="true" />
+    </item>
+</layer-list>

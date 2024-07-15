@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Define aquí los estilos para el tema oscuro -->
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <!-- Personaliza los atributos según sea necesario -->
+        <item name="colorPrimary">#263238</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">#FF4081</item>
+        <item name="android:textColorTertiary">#FFFFFF</item>
+        <!-- Agrega otros estilos -->
+    </style>
+
+
+    
+</resources>

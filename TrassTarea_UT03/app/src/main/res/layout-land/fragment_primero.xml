@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_primer_fragmento"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="24dp"
+    android:layout_marginBottom="24dp"
+    tools:context=".fragmentos.FragmentoUno">
+
+    <TextView
+        android:id="@+id/tv_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:height="24dp"
+        android:hint="@string/tv_titulo"
+        app:layout_constraintBottom_toTopOf="@+id/tv_fecha_creacion"
+        app:layout_constraintEnd_toStartOf="@+id/et_titulo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/et_titulo"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_titulo"
+        app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+    <TextView
+        android:id="@+id/tv_fecha_creacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:height="24dp"
+        android:hint="@string/tv_fecha_creacion"
+        android:maxLines="2"
+        app:layout_constraintBottom_toTopOf="@+id/tv_fecha_objetivo"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/tv_titulo" />
+
+    <TextView
+        android:id="@+id/tv_fecha_objetivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:height="24dp"
+        android:hint="@string/tv_fecha_objetivo"
+        android:maxLines="2"
+        app:layout_constraintBottom_toTopOf="@+id/tv_progreso"
+        app:layout_constraintEnd_toStartOf="@+id/et_fecha_objetivo"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fecha_creacion" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_fecha_creacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="false"
+        android:hint="@string/et_fecha"
+        android:inputType="date"
+        android:minHeight="48dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_fecha_creacion"
+        app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_fecha_objetivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="false"
+        android:hint="@string/et_fecha"
+        android:inputType="date"
+        android:minHeight="48dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_fecha_objetivo"
+        app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+    <TextView
+        android:id="@+id/tv_progreso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:height="24dp"
+        android:text="@string/tv_progreso"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/sp_progreso"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fecha_objetivo" />
+
+    <Spinner
+        android:id="@+id/sp_progreso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_progreso"
+        app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+    <CheckBox
+        android:id="@+id/cb_prioritaria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="@string/cb_prioritaria"
+        app:layout_constraintBottom_toBottomOf="@+id/sp_progreso"
+        app:layout_constraintStart_toEndOf="@+id/sp_progreso"
+        app:layout_constraintTop_toTopOf="@+id/sp_progreso" />
+
+    <Button
+        android:id="@+id/bt_siguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_siguiente"
+        app:layout_constraintBottom_toTopOf="@+id/bt_cancelar"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="211dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_percent="0.25"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bt_cancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="@string/bt_cancelar"
+        app:layout_constraintBottom_toTopOf="@+id/cb_prioritaria"
+        app:layout_constraintStart_toStartOf="@+id/guideline2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

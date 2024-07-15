@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_primer_fragmento"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="24dp"
+    android:layout_marginBottom="24dp"
+    tools:context=".fragmentos.FragmentoUno">
+
+    <TextView
+        android:id="@+id/tv_progreso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:height="24dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/tv_progreso"
+        app:layout_constraintBottom_toTopOf="@+id/cb_prioritaria"
+        app:layout_constraintEnd_toStartOf="@+id/sp_progreso"
+        app:layout_constraintHorizontal_bias="0.981"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fecha_objetivo" />
+
+    <TextView
+        android:id="@+id/tv_fecha_objetivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:height="24dp"
+        android:fontFamily="@font/roboto_bold"
+        android:hint="@string/tv_fecha_objetivo"
+        android:maxLines="1"
+        android:text="@string/tv_fecha_objetivo"
+        app:layout_constraintBottom_toTopOf="@+id/tv_progreso"
+        app:layout_constraintEnd_toStartOf="@+id/et_fecha_objetivo"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fecha_creacion" />
+
+    <TextView
+        android:id="@+id/tv_fecha_creacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:height="24dp"
+        android:fontFamily="@font/roboto_bold"
+        android:hint="@string/tv_fecha_creacion"
+        android:maxLines="2"
+        android:text="@string/tv_fecha_creacion"
+        app:layout_constraintBottom_toTopOf="@+id/tv_fecha_objetivo"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_titulo" />
+
+    <TextView
+        android:id="@+id/tv_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:height="24dp"
+        android:fontFamily="@font/roboto_bold"
+        android:hint="@string/tv_titulo"
+        android:text="@string/tv_titulo"
+        app:layout_constraintBottom_toTopOf="@+id/tv_fecha_creacion"
+        app:layout_constraintEnd_toStartOf="@+id/et_titulo"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/lexend_light"
+        android:hint="@string/et_titulo"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_titulo"
+        app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_fecha_creacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="false"
+        android:fontFamily="@font/lexend_light"
+        android:hint="@string/et_fecha"
+        android:inputType="date"
+        android:minHeight="48dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_fecha_creacion"
+        app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_fecha_objetivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="false"
+        android:fontFamily="@font/lexend_light"
+        android:hint="@string/et_fecha"
+        android:inputType="date"
+        android:minHeight="48dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_fecha_objetivo"
+        app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+    <Spinner
+        android:id="@+id/sp_progreso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_progreso"
+        app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+    <CheckBox
+        android:id="@+id/cb_prioritaria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/cb_prioritaria"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/bt_siguiente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_progreso" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="211dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_percent="0.33"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="start"
+        app:constraint_referenced_ids="et_fecha_creacion,tv_fecha_objetivo,tv_progreso,tv_titulo,bt_siguiente" />
+
+    <Button
+        android:id="@+id/bt_siguiente"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:background="@drawable/marco_boton"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/bt_siguiente"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_cancelar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bt_cancelar" />
+
+    <Button
+        android:id="@+id/bt_cancelar"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:background="@drawable/marco_boton"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/bt_cancelar"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bt_siguiente"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bt_siguiente"
+        app:layout_constraintVertical_bias="0.692" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

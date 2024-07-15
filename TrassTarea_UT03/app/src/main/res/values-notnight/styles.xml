@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Define aquí los estilos para el tema claro -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Personaliza los atributos según sea necesario -->
+        <item name="colorPrimary">@color/primario</item>
+        <item name="colorPrimaryDark">@color/primario_oscuro</item>
+        <item name="colorAccent">@color/primario_variante</item>
+
+        <!-- Agrega otros estilos -->
+        <item name="android:logo">@drawable/trasstarea_logo_letras_header</item>
+        <item name="android:displayOptions">showHome|useLogo</item>
+        <item name="android:titleTextAppearance">@style/MyActionBarTitleText</item>
+
+        <!-- Esto cambiará el color del texto del ActionBar-->
+        <item name="android:textColorPrimary">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+
+    </style>
+
+    <style name="MyActionBarTitleText" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/colorActionBar</item>
+    </style>
+
+
+        <!-- Otros estilos -->
+
+
+</resources>
